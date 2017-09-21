@@ -14,6 +14,7 @@ func TestScrapingMovies(t *testing.T) {
 	}{
 		{"tt0087182", "Dune", "1984"},
 		{"tt1800302", "Gold", "2016"},
+		{"tt0451279", "Wonder Woman", "2017"},
 	}
 	for _, tc := range testCases {
 		t.Run(fmt.Sprintf("%s => %s (%s)", tc.id, tc.title, tc.year), func(t *testing.T) {
