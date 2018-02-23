@@ -12,6 +12,7 @@ func TestScrapingMovies(t *testing.T) {
 		year  string
 	}{
 		{"tt0087182", "Dune", "1984"},
+		{"0087182", "Dune", "1984"},
 		{"tt1800302", "Gold", "2016"},
 		{"tt0451279", "Wonder Woman", "2017"},
 		{"tt0071562", "The Godfather: Part II", "1974"},

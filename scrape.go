@@ -14,6 +14,9 @@ type Movie struct {
 }
 
 func FindByID(id string) (*Movie, error) {
+    if !strings.HasPrefix(id, "tt") {
+		id = "tt" + id
+	}
 	bow := surf.NewBrowser()
 	err := bow.Open(fmt.Sprintf("http://www.imdb.com/title/%s", id))
 	if err != nil {
