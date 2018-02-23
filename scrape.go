@@ -14,7 +14,7 @@ type Movie struct {
 }
 
 func FindByID(id string) (*Movie, error) {
-    if !strings.HasPrefix(id, "tt") {
+	if !strings.HasPrefix(id, "tt") {
 		id = "tt" + id
 	}
 	bow := surf.NewBrowser()
